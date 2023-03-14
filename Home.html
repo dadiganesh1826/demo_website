@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>Demo Website</title>
+    <style>
+        body{
+            margin: 0%;
+            background-color: whitesmoke;
+        }
+        header{
+            padding: 1px 40px;
+            background-color: #FCD535;
+            
+        }
+        header h1{
+            text-align: center;
+            font-weight: bold;
+            font-size: 50px;
+            color: black;
+        }
+        nav{
+            display: flex;
+            background-color: whitesmoke;
+            position: sticky;            
+            top: 0%;
+
+        }
+        nav a{
+            padding: 25px 40px;
+            font-size: 20px;
+            font-weight: bolder;
+            text-decoration: none;
+            color: black;
+            float: left;
+            border-radius: 40px;
+        }
+        .nav_back:hover{
+            background-color: #FCD535;
+        }
+        .nav_sign{
+            margin-left: auto;
+        }
+        .nav_sign:hover{
+            background-color:#FCD535 ;
+        }
+        main{
+            margin: 2%;
+        }
+        .section1 a{
+            background-color: #FCD535;
+            text-decoration: none;
+            padding: 1%;
+            border-radius: 5px;
+            color: black;
+            font-weight: bolder;
+        }
+        .section2_sign{
+            background-color: #FCD535;
+            text-decoration: none;
+            padding: 1%;
+            border-radius: 5px;
+            color: black;
+            font-weight: bolder;
+
+        }
+        .section4{
+            text-align: justify;
+        }
+        .carousel-cell iframe{
+            width: 100%;
+            height:100%
+        }
+        .carousel-cell {
+            width: 75%;
+            height: 500px;
+            margin-right: 10px;
+            border-radius: 15px;
+        }
+
+
+        @media screen and (max-width:1130px) {
+            nav{
+                flex-direction: column;
+            }
+            .nav_sign{
+                margin-left: 0%;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span>Explore the tension free trading experience </span> </h1>   
+    </header>
+    <br>
+    <nav>
+        <a class="nav_back" href="http://127.0.0.1:5500/test.html">Trading Bots</a>
+        <a class="nav_back" href="#">Features</a>
+        <a class="nav_back" href="#">Plans</a>
+        <a class="nav_back" href="#">Crypto Updates</a>
+        <a class="nav_back" href="#">about us</a>
+        <a class="nav_back" href="#">Contact us</a>
+        <a class="nav_back" href="#">Try it free</a>
+        <a class="nav_sign" href="http://127.0.0.1:5500/sign_in_form.html">Sign In/Sign Up</a>
+    </nav>
+    <main>
+        <section class="section1">
+            <h2>Manage Your Crypto with a Click</h2>
+            <p>Using our platform you can not only manage your crypto with a click but also trade seamlessly using our smart trading bots to make profits even while you are sleeping</p>
+            <br>
+            <a class="free" href="#">Try it for free</a>
+        </section>
+                
+        <section class="section2">
+            <h1>Our Features</h1>
+                <ul>
+                    <li><strong>Smart Board</strong></li>
+                    <li><strong>Paper Trading</strong></li>
+                    <li><strong>Smart bots</strong></li>
+                    <li><strong>Smartfolio</strong></li>
+                    <li><strong>Signals</strong></li>
+                    <li><strong>Analytics</strong></li>
+                </ul>  
+                <br>          
+            <a class="section2_sign" href="http://127.0.0.1:5500/Sign_up_form.html#">Sign Up for Free</a>
+            <br>
+            <br>
+            <h3>Important Note : For More Crypto Updates Follow <a href="https://www.youtube.com/@cryptopodium/videos">Crypto Podium</a> Youtube Channel</h3>
+        </section>
+
+        <section class="section3">
+            <h1>Crypto Updates</h1>
+            <div class="carousel" 
+                data-flickity='{ "wrapAround": true 
+                }'>
+                <div class="carousel-cell"><iframe src="https://www.youtube.com/embed/b_4Ku-5QTJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="carousel-cell"><iframe src="https://www.youtube.com/embed/pQwRexQa288" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="carousel-cell"><iframe src="https://www.youtube.com/embed/HcM-nXmtS7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                
+            </div>
+        </section>
+
+        <section class="section4">
+            <h1>1st Para</h1>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <h1>2nd Para</h1>
+            <p class="para2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </section>
+    </main>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>
